@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Sanjida
+    name<br>
+    <input type="text" name="" id="name" placeholder="Enter your name here">
+    <button id="b1">submit</button>
+<div id="d1">name will be showen here</div>
+
+
+</body>
+
+<script>
+
+console.log("abc");
+
+var display=document.getElementById("d1");
+
+
+var varname=document.getElementById("name");
+
+
+var button1=document.getElementById("b1");
+
+button1.addEventListener("click",()=>{
+
+    // console.log(display.innerText); 
+
+    display.innerText=varname.value;
+
+})
+
+
+
+
+</script>
+
+
+</html>

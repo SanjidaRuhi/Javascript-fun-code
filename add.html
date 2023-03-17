@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    num one <br>
+<input type="text" name="" id="num1"><br>
+
+num two <br>
+<input type="text" name="" id="num2"><br>
+
+<button id="b1">Add</button>
+
+<button id="b2">Sub</button>
+
+<button id="b3">Multi</button>
+
+<button id="b4">Div</button><br>
+
+
+<div>
+
+    <h2>result</h2>
+
+    <h4 id="r1"></h4>
+
+</div>
+
+
+</body>
+
+<script>
+
+var n1 = document.getElementById("num1");
+var n2 = document.getElementById("num2");
+
+var b1 = document.getElementById("b1");
+var b2 = document.getElementById("b2");
+var b3 = document.getElementById("b3");
+var b4 = document.getElementById("b4");
+
+
+var r1 = document.getElementById("r1");
+b1.addEventListener("click",()=>{
+
+    var add = parseInt(n1.value) + parseInt(n2.value);
+    r1.innerText=add;
+
+})
+
+
+b2.addEventListener("click",()=>{
+
+var add = parseInt(n1.value) - parseInt(n2.value);
+r1.innerText=add;
+
+})
+
+b3.addEventListener("click",()=>{
+
+var add = parseInt(n1.value) * parseInt(n2.value);
+r1.innerText=add;
+
+})
+
+b4.addEventListener("click",()=>{
+
+    if(parseInt(n2.value)==0){
+        r1.innerText = "Divisor can't be zero"
+    }
+    else{
+
+var add = parseInt(n1.value) / parseInt(n2.value);
+r1.innerText=add;
+    }
+
+})
+
+
+</script>
+
+</html>
